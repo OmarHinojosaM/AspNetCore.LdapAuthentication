@@ -19,6 +19,7 @@
     <GenerateAssemblyProductAttribute>false</GenerateAssemblyProductAttribute>
     <Version>0.0.1</Version>
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    <PackageTags>.netstandard ldap</PackageTags>
   </PropertyGroup>
 
   <ItemGroup>
