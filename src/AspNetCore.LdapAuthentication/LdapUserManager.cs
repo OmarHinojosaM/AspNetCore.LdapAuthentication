@@ -1,14 +1,12 @@
-﻿using Microsoft.AspNetCore.Builder;
+﻿using System;
+using System.Collections.Generic;
+using System.Threading;
+using System.Threading.Tasks;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.Extensions.Logging;
 using Microsoft.Extensions.Options;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
-using System.Threading;
 
-namespace Justin.AspNetCore.LdapAuthentication
+namespace AspNetCore.LdapAuthentication
 {
     /// <summary>
     /// Provides a custom user store that overrides password related methods to valid the user's password against LDAP.

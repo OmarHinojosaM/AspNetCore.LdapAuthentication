@@ -9,7 +9,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Misc", "Misc", "{EBB7539D-9
 		README.md = README.md
 	EndProjectSection
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Justin.AspNetCore.LdapAuthentication", "src\Justin.AspNetCore.LdapAuthentication\Justin.AspNetCore.LdapAuthentication.csproj", "{66FAE534-B19C-421E-ABB9-6F3381B8EAFA}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AspNetCore.LdapAuthentication", "src\AspNetCore.LdapAuthentication\AspNetCore.LdapAuthentication.csproj", "{66FAE534-B19C-421E-ABB9-6F3381B8EAFA}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -24,5 +24,8 @@ Global
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {F71494C1-D319-4563-BF37-26F26911CA4B}
 	EndGlobalSection
 EndGlobal

@@ -1,14 +1,7 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
-using Microsoft.AspNetCore.Identity;
-using Microsoft.Extensions.Options;
 using Microsoft.Extensions.DependencyInjection;
-using Microsoft.Extensions.DependencyInjection.Extensions;
-using Justin.AspNetCore.LdapAuthentication;
 
-namespace Microsoft.Extensions.DependencyInjection
+namespace AspNetCore.LdapAuthentication
 {
     /// <summary>
     /// Provides extension methods for configuring the DI container

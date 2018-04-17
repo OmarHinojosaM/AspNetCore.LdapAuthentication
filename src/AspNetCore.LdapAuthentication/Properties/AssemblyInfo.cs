@@ -1,14 +1,12 @@
-﻿using System;
-using System.Reflection;
-using System.Runtime.CompilerServices;
+﻿using System.Reflection;
 using System.Runtime.InteropServices;
 
 // General Information about an assembly is controlled through the following
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
 [assembly: AssemblyConfiguration("")]
-[assembly: AssemblyCompany("Justin R. Buchanan")]
-[assembly: AssemblyProduct("Justin.AspNetCore.LdapAuthentication")]
+[assembly: AssemblyCompany("John Callaway")]
+[assembly: AssemblyProduct("AspNetCore.LdapAuthentication")]
 [assembly: AssemblyTrademark("")]
 
 // Setting ComVisible to false makes the types in this assembly not visible

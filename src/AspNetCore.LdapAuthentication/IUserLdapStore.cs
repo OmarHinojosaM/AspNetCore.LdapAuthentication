@@ -1,9 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
+﻿using System.Threading.Tasks;
 
-namespace Justin.AspNetCore.LdapAuthentication
+namespace AspNetCore.LdapAuthentication
 {
     /// <summary>
     /// Represents a user store that can provide the DN for an LDAP user
