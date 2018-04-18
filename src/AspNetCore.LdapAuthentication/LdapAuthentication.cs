@@ -16,7 +16,6 @@ namespace AspNetCore.LdapAuthentication
         private const string DisplayNameAttribute = "displayName";
         private const string SamAccountNameAttribute = "sAMAccountName";
 
-
         /// <summary>
         /// Initializes a new instance with the the given options.
         /// </summary>
@@ -24,7 +23,10 @@ namespace AspNetCore.LdapAuthentication
         public LdapAuthentication(LdapAuthenticationOptions options)
         {
             _options = options;
-            _connection = new LdapConnection();
+            _connection = new LdapConnection
+            {
+                SecureSocketLayer = false
+            };
         }
 
         /// <summary>
@@ -74,12 +76,12 @@ namespace AspNetCore.LdapAuthentication
             try
             {
                 var user = result.next();
-                if (user != null)
+                if (user == null)
                 {
                     return false;
                 }
 
-                _connection.Bind(username, password);
+                _connection.Bind(user.DN, password);
 
                 return _connection.Bound;
             }
@@ -94,5 +96,4 @@ namespace AspNetCore.LdapAuthentication
             }
         }
     }
-
 }

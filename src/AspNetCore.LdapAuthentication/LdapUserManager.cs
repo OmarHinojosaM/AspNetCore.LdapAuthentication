@@ -12,7 +12,7 @@ namespace AspNetCore.LdapAuthentication
     /// Provides a custom user store that overrides password related methods to valid the user's password against LDAP.
     /// </summary>
     /// <typeparam name="TUser"></typeparam>
-    public class LdapUserManager<TUser> : Microsoft.AspNetCore.Identity.UserManager<TUser>
+    public class LdapUserManager<TUser> : UserManager<TUser>
         where TUser: class
     {
         private readonly LdapAuthenticationOptions _ldapOptions;
@@ -129,6 +129,23 @@ namespace AspNetCore.LdapAuthentication
             throw new NotSupportedException();
         }
 
-    }
+        /// <summary>
+        /// Checks the given password agains the configured LDAP server.
+        /// </summary>
+        /// <param name="username"></param>
+        /// <param name="password"></param>
+        /// <returns></returns>
+        public bool PasswordSignIn(string username, string password)
+        {
+            using (var auth = new LdapAuthentication(_ldapOptions))
+            {
+                if (auth.ValidatePassword(username, password))
+                {
+                    return true;
+                }
+            }
 
+            return false;
+        }
+    }
 }
