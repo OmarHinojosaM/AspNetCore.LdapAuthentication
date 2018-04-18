@@ -17,10 +17,10 @@
     <GenerateAssemblyConfigurationAttribute>false</GenerateAssemblyConfigurationAttribute>
     <GenerateAssemblyCompanyAttribute>false</GenerateAssemblyCompanyAttribute>
     <GenerateAssemblyProductAttribute>false</GenerateAssemblyProductAttribute>
-    <Version>0.0.2</Version>
+    <Version>0.9.1</Version>
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
     <PackageTags>.netstandard ldap novell.directory.ldabp.netstandard</PackageTags>
-    <AssemblyVersion>0.0.2.0</AssemblyVersion>
+    <AssemblyVersion>0.9.1.0</AssemblyVersion>
   </PropertyGroup>
 
   <ItemGroup>
